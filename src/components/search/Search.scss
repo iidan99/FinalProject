@@ -1,0 +1,54 @@
+.search_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 130px;
+  margin-top: 50px;
+  &_content {
+    font-size: 1.875rem;
+    span p {
+      display: inline;
+    }
+    p {
+      color: #00a404;
+    }
+  }
+  &_input {
+    &_form {
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+      height: 50px;
+      &-area {
+        outline: none;
+        border-radius: 50px;
+        padding: 15px;
+        font-size: 18px;
+        border: 2px solid #808080;
+        width: 134px;
+      }
+      &-phone {
+        width: 400px;
+        outline: none;
+        border-radius: 50px;
+        padding: 15px;
+        font-size: 18px;
+        border: 2px solid #808080;
+      }
+      button {
+        border: 2px solid #00a404;
+        width: 400px;
+        border-radius: 50px;
+        background-color: #00a404;
+        font-size: 18pt;
+        color: #ffffff;
+        height: 53px;
+        padding-bottom: 5px;
+        outline: none;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    }
+  }
+}
