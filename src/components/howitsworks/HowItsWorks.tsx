@@ -3,9 +3,9 @@ import "./HowItsWorks.scss";
 const HowItsWorks = () => {
   return (
     <div className="work-container">
-      <h1>
+      <p>
         How It <b>Work?</b>
-      </h1>
+      </p>
     </div>
   );
 };
