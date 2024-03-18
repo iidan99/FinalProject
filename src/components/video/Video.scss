@@ -1,0 +1,15 @@
+.video_container {
+  height: 500px;
+  background-image: url("../../assets/images/computer.png");
+  margin-top: 150px;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  width: 31%;
+  height: 68%;
+  left: 35%;
+  top: 2%;
+  border: none;
+}

@@ -1,0 +1,62 @@
+.popup_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.506);
+  position: fixed;
+  z-index: 1;
+  &-content {
+    height: 660px;
+    width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: -2px 0px 20px 4px;
+    background-image: url("../../assets/images/bootom_startchatlogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    &-header {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      align-items: center;
+      background-image: url("../../assets/images/Header_Main_IMG.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 180px;
+      border-radius: 15px;
+      h2 {
+        color: #ffffff;
+        font-size: 3rem;
+      }
+    }
+    &--X {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      left: 223px;
+      top: -115px;
+      cursor: pointer;
+      &-left {
+        width: 30px;
+        height: 10px;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        transform: rotate(135deg);
+        position: absolute;
+        top: 15px;
+      }
+      &-right {
+        position: absolute;
+        width: 30px;
+        height: 10px;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

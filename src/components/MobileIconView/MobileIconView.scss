@@ -1,0 +1,36 @@
+.mobile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  background-image: url("../../assets/images/howitworkback.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.mobile {
+  &_img {
+    display: flex;
+    justify-content: center;
+    &_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &-1 {
+      height: 120px;
+    }
+  }
+  h3 {
+    font-size: 3.313rem;
+    color: white;
+  }
+  &-content {
+    font-size: 1.938rem;
+    margin-bottom: 150px;
+    color: white;
+  }
+}

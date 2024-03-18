@@ -1,17 +1,16 @@
-import logoIMG from "../../assets/images/Header_Logo.png";
-import googlePlayIMG from "../../assets/images/google-play-badge.png";
 import phoneIMG from "../../assets/images/header_phone.png";
+import DownloadApp from "../DownloadApp/DownloadApp";
 import "./Header.scss";
 
 const Header = () => {
   return (
     <div className="container">
       <div className="container_logo">
-        <img
+        {/* <img
           className="container_logo_Img"
           src={logoIMG}
           alt="StartChat Logo"
-        />
+        /> */}
         <div className="container_text">
           <p className="container_main_text">
             WhatsApp to people
@@ -28,19 +27,7 @@ const Header = () => {
             and etc. by sending them to your phone number.
           </p>
         </div>
-        <div className="container_btn">
-          <a
-            className="container_btn_a"
-            href="https://play.google.com/store/apps/details?id=org.nativescript.StartChat"
-            target="_blank"
-          >
-            <img
-              className="container_btn_google"
-              src={googlePlayIMG}
-              alt="google play"
-            />
-          </a>
-        </div>
+        <DownloadApp />
       </div>
       <div
         className="container_header_phone"

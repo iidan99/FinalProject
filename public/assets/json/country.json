@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Israel",
+    "dial_code": "+972",
+    "code": "IL",
+    "flag": "assets/Flags/israel_flag.jpg"
+  },
+  {
+    "name": "Afghanistan",
+    "dial_code": "+93",
+    "code": "AF",
+    "flag": "assets/Flags/Afghanistan_flag.jpg"
+  },
+  {
+    "name": "Albania",
+    "dial_code": "+355",
+    "code": "AL",
+    "flag": "assets/Flags/Albania_flag.jpg"
+  },
+  {
+    "name": "Algeria",
+    "dial_code": "+213",
+    "code": "DZ",
+    "flag": "assets/Flags/Algeria_flag.jpg"
+  },
+  {
+    "name": "AmericanSamoa",
+    "dial_code": "+1684",
+    "code": "AS",
+    "flag": "assets/Flags/AmericanSamoa_flag.jpg"
+  },
+  {
+    "name": "Andorra",
+    "dial_code": "+376",
+    "code": "AD",
+    "flag": "assets/Flags/Andorra_flag.jpg"
+  },
+  {
+    "name": "Angola",
+    "dial_code": "+244",
+    "code": "AO",
+    "flag": "assets/Flags/Angola_flag.jpg"
+  },
+  {
+    "name": "Anguilla",
+    "dial_code": "+1264",
+    "code": "AI",
+    "flag": "assets/Flags/Anguilla_flag.jpg"
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "dial_code": "+1268",
+    "code": "AG",
+    "flag": "assets/Flags/Antigua and Barbuda_flag.jpg"
+  },
+  {
+    "name": "Argentina",
+    "dial_code": "+54",
+    "code": "AR",
+    "flag": "assets/Flags/Argentina_flag.jpg"
+  },
+  {
+    "name": "Armenia",
+    "dial_code": "+374",
+    "code": "AM",
+    "flag": "assets/Flags/Armenia_flag.jpg"
+  },
+  {
+    "name": "Aruba",
+    "dial_code": "+297",
+    "code": "AW",
+    "flag": "assets/Flags/aruba_flag.jpg"
+  },
+  {
+    "name": "Australia",
+    "dial_code": "+61",
+    "code": "AU",
+    "flag": "assets/Flags/Australia_flag.jpg"
+  },
+  {
+    "name": "Austria",
+    "dial_code": "+43",
+    "code": "AT",
+    "flag": "assets/Flags/Austria_flag.jpg"
+  },
+  {
+    "name": "Azerbaijan",
+    "dial_code": "+994",
+    "code": "AZ",
+    "flag": "assets/Flags/Azerbaijan_flag.jpg"
+  },
+  {
+    "name": "Bahamas",
+    "dial_code": "+1242",
+    "code": "BS",
+    "flag": "assets/Flags/Bahamas_flag.jpg"
+  },
+  {
+    "name": "Bahrain",
+    "dial_code": "+973",
+    "code": "BH",
+    "flag": "assets/Flags/Bahrain_flag.jpg"
+  },
+  {
+    "name": "Bangladesh",
+    "dial_code": "+880",
+    "code": "BD",
+    "flag": "assets/Flags/Bangladesh_flag.jpg"
+  },
+  {
+    "name": "Barbados",
+    "dial_code": "+1246",
+    "code": "BB",
+    "flag": "assets/Flags/Barbados_flag.jpg"
+  },
+  {
+    "name": "Belarus",
+    "dial_code": "+375",
+    "code": "BY",
+    "flag": "assets/Flags/Belarus_flag.jpg"
+  },
+  {
+    "name": "Belgium",
+    "dial_code": "+32",
+    "code": "BE",
+    "flag": "assets/Flags/Belgium_flag.jpg"
+  },
+  {
+    "name": "Belize",
+    "dial_code": "+501",
+    "code": "BZ",
+    "flag": "assets/Flags/Belize_flag.jpg"
+  },
+  {
+    "name": "Benin",
+    "dial_code": "+229",
+    "code": "BJ",
+    "flag": "assets/Flags/Benin_flag.jpg"
+  },
+  {
+    "name": "Bermuda",
+    "dial_code": "+1441",
+    "code": "BM",
+    "flag": "assets/Flags/Bermuda_flag.jpg"
+  },
+  {
+    "name": "Bhutan",
+    "dial_code": "+975",
+    "code": "BT",
+    "flag": "assets/Flags/Bhutan_flag.jpg"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "dial_code": "+387",
+    "code": "BA",
+    "flag": "assets/Flags/Bosnia and Herzegovina_flag.jpg"
+  },
+  {
+    "name": "Botswana",
+    "dial_code": "+267",
+    "code": "BW",
+    "flag": "assets/Flags/Botswana_flag.jpg"
+  },
+  {
+    "name": "Brazil",
+    "dial_code": "+55",
+    "code": "BR",
+    "flag": "assets/Flags/Brazil_flag.jpg"
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "dial_code": "+246",
+    "code": "IO",
+    "flag": "assets/Flags/British Indian Ocean Territory_flag.jpg"
+  },
+  {
+    "name": "Bulgaria",
+    "dial_code": "+359",
+    "code": "BG",
+    "flag": "assets/Flags/Bulgaria_flag.jpg"
+  },
+  {
+    "name": "Burkina Faso",
+    "dial_code": "+226",
+    "code": "BF",
+    "flag": "assets/Flags/Burkina Faso_flag.jpg"
+  },
+  {
+    "name": "Burundi",
+    "dial_code": "+257",
+    "code": "BI",
+    "flag": "assets/Flags/Burundi_flag.jpg"
+  },
+  {
+    "name": "Cambodia",
+    "dial_code": "+855",
+    "code": "KH",
+    "flag": "assets/Flags/Cambodia_flag.jpg"
+  },
+  {
+    "name": "Cameroon",
+    "dial_code": "+237",
+    "code": "CM",
+    "flag": "assets/Flags/Brazil_flag.jpg"
+  }
+]
