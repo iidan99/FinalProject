@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import { useState } from "react";
 import PopUpModal from "./modals/PopUpModal/PopUpModal";
+import MyProfile from "./pages/MyProfile/MyProfile";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/my-profile" element={<MyProfile />} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>

@@ -17,8 +17,7 @@
     "lodash.debounce": "^4.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3",
-    "wix-style-react": "^10.159.6"
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.9",
