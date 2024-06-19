@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from "react";
 import "./RegisterForm.scss";
 import { RegistrationFormData } from "../../interface/Registration";
 import { axiosClient } from "../../utils/apiClient";
+import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 
 const RegisterForm = () => {
   const [formData, setFormData] = useState<RegistrationFormData>({
@@ -153,6 +154,7 @@ const RegisterForm = () => {
         >
           Register
         </button>
+        <PrivacyPolicy />
       </form>
       {!passwordsMatch && (
         <p className="error-message">Passwords do not match</p>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CountriesDropDown from "../countriesDropdown/CountriesDropDown";
 import "./Search.scss";
-import axios from "axios";
+import * as countryJson from "../../assets/json/country.json";
 
 const Search = () => {
   const [selectedCountryIndex, setSelectedCountryIndex] = useState(0);
@@ -13,8 +13,7 @@ const Search = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("/assets/json/country.json");
-        setCountries(response.data);
+        setCountries(countryJson.default);
       } catch (error) {
         console.error("Error fetching countries:", error);
       }
