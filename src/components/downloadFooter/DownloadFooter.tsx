@@ -1,4 +1,5 @@
 import DownloadApp from "../DownloadApp/DownloadApp";
+import PrivacyPolicy from "../PrivacyPolicy/PrivacyPolicy";
 import "./DownloadFooter.scss";
 
 const DownloadFooter = () => {
@@ -11,6 +12,9 @@ const DownloadFooter = () => {
         <DownloadApp />
       </div>
       <div className="download-footer_bottom"></div>
+      <div className="privacy">
+        <PrivacyPolicy />
+      </div>
     </div>
   );
 };

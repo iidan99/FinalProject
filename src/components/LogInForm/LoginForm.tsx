@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./LoginForm.scss";
-import { useState } from "react";
+import { isValidElement, useState } from "react";
 import { axiosClient } from "../../utils/apiClient";
 import { getUserDataFromToken } from "../../context/AuthProvider";
 
@@ -24,10 +24,14 @@ const LoginForm = () => {
   const handleLoginSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const login = await axiosClient.post("/user/login", loginUser);
-    window.localStorage.setItem("accessToken", login.data.accessToken);
-    window.localStorage.setItem("refreshToken", login.data.refreshToken);
-    getUserDataFromToken(login.data.accessToken);
-    window.location.reload();
+    if (login) {
+      window.localStorage.setItem("accessToken", login.data.accessToken);
+      window.localStorage.setItem("refreshToken", login.data.refreshToken);
+      getUserDataFromToken(login.data.accessToken);
+      window.location.reload();
+    } else {
+      alert("User or password isn't correct");
+    }
   };
 
   return (
@@ -58,6 +62,7 @@ const LoginForm = () => {
           onClick={() => setViewPassword(!viewPassword)}
         />
       </span>
+      {/* {isValidElement ? <p>Email or Password isn't correct</p>} */}
       <button type="submit" disabled={!isFormValid}>
         Login
       </button>

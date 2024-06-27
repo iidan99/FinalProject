@@ -89,7 +89,7 @@ const AuthHelper = ({ logout, children, onSelect }: any) => {
               }
               return err;
             } else {
-              logout();
+              // logout();
             }
           } else {
             logout();
