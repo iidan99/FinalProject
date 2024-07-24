@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   faEnvelope,
   faEye,
@@ -6,33 +7,33 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./LoginForm.scss";
-import { isValidElement, useState } from "react";
-import { axiosClient } from "../../utils/apiClient";
-import { getUserDataFromToken } from "../../context/AuthProvider";
+import { useLogin } from "../../service/LoginService";
 
 const LoginForm = () => {
   const [viewPassword, setViewPassword] = useState(false);
   const [loginUser, setLoginUser] = useState({ email: "", password: "" });
   const [isFormValid, setIsFormValid] = useState(false);
 
+  const { login, userValid } = useLogin();
+
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setLoginUser((prevUser) => ({ ...prevUser, [name]: value }));
-    setIsFormValid(loginUser.email !== "" && loginUser.password !== "");
   };
 
   const handleLoginSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const login = await axiosClient.post("/user/login", loginUser);
-    if (login) {
-      window.localStorage.setItem("accessToken", login.data.accessToken);
-      window.localStorage.setItem("refreshToken", login.data.refreshToken);
-      getUserDataFromToken(login.data.accessToken);
+    const success = await login(loginUser);
+    if (success) {
       window.location.reload();
     } else {
       alert("User or password isn't correct");
     }
   };
+
+  useEffect(() => {
+    setIsFormValid(loginUser.email !== "" && loginUser.password !== "");
+  }, [loginUser]);
 
   return (
     <form className="login_form" onSubmit={handleLoginSubmit}>
@@ -62,7 +63,7 @@ const LoginForm = () => {
           onClick={() => setViewPassword(!viewPassword)}
         />
       </span>
-      {/* {isValidElement ? <p>Email or Password isn't correct</p>} */}
+      {!userValid && <p>Email or Password isn't correct</p>}
       <button type="submit" disabled={!isFormValid}>
         Login
       </button>
