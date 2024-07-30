@@ -1,0 +1,10 @@
+.logged_in_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
